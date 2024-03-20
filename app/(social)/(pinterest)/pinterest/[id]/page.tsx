@@ -4,7 +4,7 @@
   export default async function Ticketdetails({params}:any) {
 
     async function getpostbyid(postid: string) {
-      const response = await fetch(`https://nsfwaichat.tech/api/pinterest/${postid}`,{
+      const response = await fetch(`https://onlyfansai.online/api/pinterest/${postid}`,{
       method: "GET",
       });
   

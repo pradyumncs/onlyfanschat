@@ -13,7 +13,7 @@ const nextConfig = {
           },
           {
             protocol: "https",
-            hostname: "nsfwaichat.tech",
+            hostname: "onlyfansai.online",
             port: "",
           },
         ],

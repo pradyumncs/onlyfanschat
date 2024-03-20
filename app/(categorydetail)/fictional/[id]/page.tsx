@@ -8,7 +8,7 @@
 
     async function getpostbyid(postid: string) {
 
-      const response = await fetch(`https://nsfwaichat.tech/api/nsfww/${postid}`,{
+      const response = await fetch(`https://onlyfansai.online/api/nsfww/${postid}`,{
       next: { revalidate: 3600 },
       method: "GET",
       });

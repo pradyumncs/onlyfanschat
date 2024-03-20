@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://nsfwaichat.tech/sitemap.xml',
+    sitemap: 'https://onlyfansai.online/sitemap.xml',
   }
 }
