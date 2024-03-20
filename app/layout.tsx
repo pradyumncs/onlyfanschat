@@ -11,9 +11,9 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "NSFW AI Chat",
+  title: "OnlyFans AI Chat",
   description:
-    "Nsfwaichat Experience discreet NSFW AI-driven conversations with NSFwAIChat.tech where you chat with NSFW Characters.",
+    "OnlyFans AI Chat . Chat with Ai Characters and Onlyfans AI characters today. Get to know everything about them with OnlyFans AI Chat ",
 }
 
 export default function RootLayout({ children }: React.PropsWithChildren) {
