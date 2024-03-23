@@ -2677,7 +2677,6 @@ return [
   { url: 'https://onlyfansai.online/onlyfans-leak/alexischanelmendoza-onlyfans-leak', lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5, },
   { url: 'https://onlyfansai.online/onlyfans-leak/alexiscrystal-onlyfans-leak', lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5, },
   { url: 'https://onlyfansai.online/onlyfans-leak/alexisdownunder-onlyfans-leak', lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5, },
-  { url: 'https://onlyfansai.online/onlyfans-leak/alexisejames_,-onlyfans-leak', lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5, },
   { url: 'https://onlyfansai.online/onlyfans-leak/alexisfawx-onlyfans-leak', lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5, },
   { url: 'https://onlyfansai.online/onlyfans-leak/alexisfeather-onlyfans-leak', lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5, },
   { url: 'https://onlyfansai.online/onlyfans-leak/alexisgoldx-onlyfans-leak', lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5, },
