@@ -5,7 +5,7 @@ import Chatbotblog from "@/components/chatbotblog";
 import type { Metadata, ResolvingMetadata } from 'next';
 
 async function getPostBySlug(slug: string) {
-  const response = await fetch(`https://onlyfansai.online/api/nsfw-chat/${slug}`, {
+  const response = await fetch(`https://onlyfansai.online/api/onlyfans-leak/${slug}`, {
     next: { revalidate: 3600 },
     method: "GET",
   });

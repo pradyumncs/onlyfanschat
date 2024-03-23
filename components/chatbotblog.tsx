@@ -151,7 +151,7 @@ const Chatbotblog: React.FC<ChatbotProps> = ({ title }) => {
           <div key={chat.id} className="mb-5 relative">
             <div className={`p-2 rounded-xl ${chat.sender == "user" ? styles.user : styles.model}`}>
               <div className={styles.icons}>
-                <Image src={chat.sender == "user" ? "/user.svg" : "/anime/2.jpg"} alt="logo" width={30} height={30}  className={chat.sender !== "user" ? styles.roundImage : ""} />
+                <Image src={chat.sender == "user" ? "/user.svg" : "/chat/1.jpg"} alt="logo" width={30} height={30}  className={chat.sender !== "user" ? styles.roundImage : ""} />
               </div>
               <Markdown className="mt-2">
                 {chat.message}
@@ -165,7 +165,7 @@ const Chatbotblog: React.FC<ChatbotProps> = ({ title }) => {
           <input 
           type="text" 
           placeholder={`Message ${title}...`} value={prompt} className={`${styles.input}`} onChange={onPromptChange} onKeyDown={handleSubmit}/>
-          <Image src="/clean.png" alt="logo" width={35} height={35} className="absolute bottom-0.5 right-7 cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out" onClick={deleteChatHistory}/>
+          
         </div>
         {loading ? (
           <button className={styles.buttonloading} disabled>
