@@ -39,7 +39,4 @@ export default async function sitemap({ id }, products) {
   }));
 }
 
-// Helper function to simulate product slicing (replace with your actual data fetching logic)
-function generateProductsSlice(products, start, end) {
-  return products.slice(start, Math.min(end, products.length));
-}
+
