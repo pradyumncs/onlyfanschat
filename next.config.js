@@ -6,9 +6,10 @@ const nextConfig = {
     // ... other sitemap properties
     paths: [
       
-      'app/sitemap.ts', 
-      'app/asitemap.ts',// Add your new sitemap here
+      'sitemap.ts', 
+      'sitemap2.ts',// Add your new sitemap here
     ],
+    
   },
     images: {
         domains: [
