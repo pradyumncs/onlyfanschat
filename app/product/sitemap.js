@@ -16,7 +16,7 @@ export async function generateSitemaps() {
     const products = await fetchProducts();
 
     // Calculate the number of sitemaps needed based on Google's limit
-    const numSitemaps = Math.ceil(products.length / 50000);
+    const numSitemaps = Math.ceil(products.length / 5000);
 
     // Create an array of sitemap objects with IDs
     const sitemaps = Array.from({ length: numSitemaps }, (_, i) => ({ id: i }));
@@ -37,8 +37,8 @@ export default async function sitemap({ id }, products) {
   }
 
   // Google's limit is 50,000 URLs per sitemap
-  const start = id * 50000;
-  const end = Math.min(start + 50000, products.length); // Ensure end doesn't exceed array length
+  const start = id * 5000;
+  const end = Math.min(start + 5000, products.length); // Ensure end doesn't exceed array length
 
   // Filter products for the current sitemap using a loop
   const productsForSitemap = [];
