@@ -1,5 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+
+  sitemap: {
+   
+    // ... other sitemap properties
+    paths: [
+      
+      'app/sitemap.ts', 
+      'app/asitemap.ts',// Add your new sitemap here
+    ],
+  },
     images: {
         domains: [
           "res.cloudinary.com",
