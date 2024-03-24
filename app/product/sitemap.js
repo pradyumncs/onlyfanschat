@@ -23,13 +23,16 @@ export async function generateSitemaps() {
   return sitemaps;
 }
 
-export default async function sitemap({ id }, products) { // Pass products explicitly
+export default async function sitemap({ id }, products) {
   // Google's limit is 50,000 URLs per sitemap
   const start = id * 50000;
-  const end = start + 50000;
+  const end = Math.min(start + 50000, products.length); // Ensure end doesn't exceed array length
 
-  // Simulate fetching products based on the calculated indices (remove for actual implementation)
-  const productsForSitemap = products.slice(start, Math.min(end, products.length));
+  // Filter products for the current sitemap using a loop
+  const productsForSitemap = [];
+  for (let i = start; i < end; i++) {
+    productsForSitemap.push(products[i]);
+  }
 
   console.log("Products for sitemap:", productsForSitemap);
 
