@@ -1,10 +1,18 @@
-export async function generateSitemaps() {
-  // Define an array of example product URLs (replace with your actual product data)
-  const products = [
+// Import any necessary modules or define functions if needed
+
+// Define a function to fetch products (replace this with your actual data fetching logic)
+async function fetchProducts() {
+  // Simulated data fetching
+  return [
     { id: 1, url: 'https://onlyfansai.online/product/1', lastModified: '2024-03-24' },
     { id: 2, url: 'https://onlyfansai.online/product/2', lastModified: '2024-03-23' },
-    // ... Add more product objects here
+    // Add more product objects here
   ];
+}
+
+export async function generateSitemaps() {
+  // Fetch products
+  const products = await fetchProducts();
 
   // Calculate the number of sitemaps needed based on Google's limit
   const numSitemaps = Math.ceil(products.length / 50000);
@@ -15,7 +23,7 @@ export async function generateSitemaps() {
   return sitemaps;
 }
 
-export default async function sitemap({ id }, products) { // Pass products as a parameter
+export default async function sitemap({ id }, products) {
   // Google's limit is 50,000 URLs per sitemap
   const start = id * 50000;
   const end = start + 50000;
