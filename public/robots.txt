@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://onlyfansai.online
-
-# Sitemaps
-Sitemap: https://onlyfansai.online/sitemap.xml
