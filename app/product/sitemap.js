@@ -11,19 +11,31 @@ async function fetchProducts() {
 }
 
 export async function generateSitemaps() {
-  // Fetch products
-  const products = await fetchProducts();
+  try {
+    // Fetch products (handle potential errors)
+    const products = await fetchProducts();
 
-  // Calculate the number of sitemaps needed based on Google's limit
-  const numSitemaps = Math.ceil(products.length / 50000);
+    // Calculate the number of sitemaps needed based on Google's limit
+    const numSitemaps = Math.ceil(products.length / 50000);
 
-  // Create an array of sitemap objects with IDs
-  const sitemaps = Array.from({ length: numSitemaps }, (_, i) => ({ id: i }));
+    // Create an array of sitemap objects with IDs
+    const sitemaps = Array.from({ length: numSitemaps }, (_, i) => ({ id: i }));
 
-  return sitemaps;
+    return sitemaps;
+  } catch (error) {
+    console.error("Error fetching products for sitemaps:", error);
+    // Consider returning an empty array or error response here
+  }
 }
 
 export default async function sitemap({ id }, products) {
+  // Handle potential undefined products here
+  if (!products) {
+    console.error("Products data is missing for sitemap generation");
+    // Consider returning an empty array or error response here
+    return []; // Example: Return an empty array to prevent further errors
+  }
+
   // Google's limit is 50,000 URLs per sitemap
   const start = id * 50000;
   const end = Math.min(start + 50000, products.length); // Ensure end doesn't exceed array length
