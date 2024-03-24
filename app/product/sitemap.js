@@ -1,5 +1,3 @@
-
-
 export async function generateSitemaps() {
   // Define an array of example product URLs (replace with your actual product data)
   const products = [
@@ -17,7 +15,7 @@ export async function generateSitemaps() {
   return sitemaps;
 }
 
-export default async function sitemap({ id }) {
+export default async function sitemap({ id }, products) { // Pass products as a parameter
   // Google's limit is 50,000 URLs per sitemap
   const start = id * 50000;
   const end = start + 50000;
