@@ -74,7 +74,7 @@ const Seopost: React.FC<{ cards: CardItem[] }> = ({ cards }) => {
      </div>
     ))}
    </div>
-   <div className="flex justify-center mt-4">
+   <div className="mt-4 flex-col items-center">
     {Array.from({ length: getNumberOfPages() }, (_, i) => (
      <button
       key={i + 1}
