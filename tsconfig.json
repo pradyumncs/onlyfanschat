@@ -30,6 +30,6 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts", 
-    "app/product/sitemap.js",  ],
+    "app/product/sitemap.js", "app/(blogsdetail)/langua/page.jsx", "utils/connectMongo.js", "app/api/mongonext/route.js", "app/api/checkdb/route.js",  ],
   "exclude": ["node_modules"]
 }

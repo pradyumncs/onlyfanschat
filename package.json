@@ -36,6 +36,8 @@
     "clsx": "^2.1.0",
     "eslint-config-next": "^14.1.4",
     "lucide-react": "^0.274.0",
+    "mongodb": "^6.5.0",
+    "mongoose": "^8.2.3",
     "next": "^14.1.4",
     "next-auth": "beta",
     "next-sanity": "^8.0.0",

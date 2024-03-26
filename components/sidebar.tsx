@@ -122,8 +122,8 @@ export const Sidebar = () => {
     },
    
     {
-      "href": "/movie",
-      "label": "Movie",
+      "href": "/onlyfans-leaks",
+      "label": "Leak",
       "emoji": "🎬"
     },
     {
