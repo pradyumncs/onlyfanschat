@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://onlyfansai.online
+
+# Sitemaps
+Sitemap: https://onlyfansai.online/sitemap.xml
+Sitemap: https://onlyfansai.online/products/sitemap/1.xml
+Sitemap: https://onlyfansai.online/products/sitemap/2.xml
+Sitemap: https://onlyfansai.online/products/sitemap/3.xml
+Sitemap: https://onlyfansai.online/products/sitemap/4.xml
